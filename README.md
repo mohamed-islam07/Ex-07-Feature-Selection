@@ -16,10 +16,9 @@ Apply Feature selection techniques to all the features of the data set
 ### STEP 4
 Save the data to the file
 
-name : mohamed islam.a
-reg no: 212220220025
-# CODE:
-```
+
+# CODE
+~~~
 from sklearn.datasets import load_boston
 boston_data=load_boston()
 import pandas as pd
@@ -129,12 +128,19 @@ X = boston.drop(columns='MEDV')[['CRIM','RM','PTRATIO','LSTAT']]
 y_pred = cross_val_predict(classifier_pipeline, X, y, cv=cv)
 print("RMSE: " + str(round(sqrt(mean_squared_error(y,y_pred)),3)))
 print("R_squared: " + str(round(r2_score(y,y_pred),3)))
-```
+~~~
 
 # OUPUT
-![output](./1.png)
-![output](./2.png)
-![output](./3.png)
-![output](./4.png)
+![OUTPUT](./Q1.png)
+![OUTPUT](./Q2.png)
+![OUTPUT](./Q3.png)
+![OUTPUT](./Q4.png)
+![OUTPUT](./Q5.png)
+![OUTPUT](./Q6.png)
+![OUTPUT](./Q7.png)
+![OUTPUT](./Q8.png)
+![OUTPUT](./Q9.png)
+![OUTPUT](./Q10.png)
+
 ## RESULT
 The various feature selection techniques has been performed on a dataset and saved the data to a file.
