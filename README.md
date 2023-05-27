@@ -2,11 +2,11 @@
 ## AIM
 To Perform the various feature selection techniques on a dataset and save the data to a file. 
 
-# Explanation
+## Explanation
 Feature selection is to find the best set of features that allows one to build useful models.
 Selecting the best features helps the model to perform well. 
 
-# ALGORITHM
+## ALGORITHM
 ### STEP 1
 Read the given Data
 ### STEP 2
@@ -16,9 +16,9 @@ Apply Feature selection techniques to all the features of the data set
 ### STEP 4
 Save the data to the file
 
+## CODE
 
-# CODE
-~~~
+```
 from sklearn.datasets import load_boston
 boston_data=load_boston()
 import pandas as pd
@@ -128,19 +128,43 @@ X = boston.drop(columns='MEDV')[['CRIM','RM','PTRATIO','LSTAT']]
 y_pred = cross_val_predict(classifier_pipeline, X, y, cv=cv)
 print("RMSE: " + str(round(sqrt(mean_squared_error(y,y_pred)),3)))
 print("R_squared: " + str(round(r2_score(y,y_pred),3)))
-~~~
 
-# OUPUT
-![OUTPUT](./Q1.png)
-![OUTPUT](./Q2.png)
-![OUTPUT](./Q3.png)
-![OUTPUT](./Q4.png)
-![OUTPUT](./Q5.png)
-![OUTPUT](./Q6.png)
-![OUTPUT](./Q7.png)
-![OUTPUT](./Q8.png)
-![OUTPUT](./Q9.png)
-![OUTPUT](./Q10.png)
+```
+
+## OUTPUT
+![OUTPUT](./1.png)
+
+![OUTPUT](./2.png)
+
+![OUTPUT](./3.png)
+
+![OUTPUT](./4.png)
+
+![OUTPUT](./5.png)
+
+![OUTPUT](./6.png)
+
+![OUTPUT](./7.png)
+
+![OUTPUT](./8.png)
+
+![OUTPUT](./9.png)
+
+![OUTPUT](./10.png)
+
+![OUTPUT](./11.png)
+
+![OUTPUT](./12.png)
+
+![OUTPUT](./13.png)
+
+![OUTPUT](./14.png)
+
+![OUTPUT](./15.png)
+
+![OUTPUT](./16.png)
 
 ## RESULT
-The various feature selection techniques has been performed on a dataset and saved the data to a file.
+The various feature selection techniques has been performed on a dataset and saved the data to a file. 
+
+
